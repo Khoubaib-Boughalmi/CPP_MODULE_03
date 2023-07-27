@@ -1,11 +1,12 @@
-#include "ClapTrap.hpp"
+#include "ScavTrap.h"
 
 int main()
 {
-    ClapTrap clapy("ClapyNinja");
-    clapy.attack("Ninja Slayer");
-    clapy.takeDamage(5);
-    clapy.beRepaired(12);
-    clapy.takeDamage(77);
+    ScavTrap scavTrap("ScavTrapNinja");
+    scavTrap.attack("Ninja Slayer");
+    scavTrap.takeDamage(5);
+    scavTrap.beRepaired(12);
+    scavTrap.takeDamage(77);
+    scavTrap.guardGate();
     return (0);
 }

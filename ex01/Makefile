@@ -1,9 +1,10 @@
-NAME=ClapTrap
+NAME=ScavTrap
 CC= c++
 CFLAGS= -std=c++98 -Wall -Wextra -Werror
 
 SRCS =	main.cpp \
-		ClapTrap.cpp
+		ClapTrap.cpp \
+		ScavTrap.cpp
 		
 %.o:%.cpp
 	${CC} ${CFLAGS} -c $^ -o $@

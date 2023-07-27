@@ -1,6 +1,7 @@
-#include "ClapTrap.hpp"
+#include "ClapTrap.h"
 
-ClapTrap::ClapTrap()
+ClapTrap::ClapTrap():   Name("undefined"), HitPoint(10), \
+                        EnergyPoint(10), AttackDamage(10) 
 {}
 
 ClapTrap::ClapTrap(std::string passedName): Name(passedName), HitPoint(10), \
