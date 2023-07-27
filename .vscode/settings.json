@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "scavtrap.hpp": "c",
+        "claptrap.hpp": "c"
+    }
+}
