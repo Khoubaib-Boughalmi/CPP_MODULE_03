@@ -23,7 +23,7 @@ FragTrap::~FragTrap()
     std::cout << "FragTrap Deconstructor Called" << std::endl;
 }
 
-FragTrap::FragTrap(const FragTrap& other) {
+FragTrap::FragTrap(const FragTrap& other):ClapTrap(other) {
     std::cout << "FragTrap Copy Construct Called" << std::endl;
     *this = other;
 }
