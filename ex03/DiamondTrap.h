@@ -4,6 +4,8 @@
 #include "FragTrap.h"
 #include "ScavTrap.h"
 
+#define SUFFIX _clap_name;
+
 class DiamondTrap: public ScavTrap, public FragTrap
 {
     private:
@@ -15,6 +17,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
         DiamondTrap& operator=(const DiamondTrap& other);
         ~DiamondTrap();
         void attack(const std::string& target);
+        void whoAmI(void);
 };
 
 #endif
