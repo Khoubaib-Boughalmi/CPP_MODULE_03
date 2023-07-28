@@ -1,4 +1,4 @@
-#include "ClapTrap.hpp"
+#include "ClapTrap.h"
 
 ClapTrap::ClapTrap(): Name("Unamed"), HitPoint(10), \
                                         EnergyPoint(10), AttackDamage(0) 

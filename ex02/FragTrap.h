@@ -8,13 +8,13 @@ class FragTrap: public ClapTrap
     private:
 
     public:
-        FragTrap(/* args */);
-        virtual ~FragTrap();
+        FragTrap();
+        ~FragTrap();
         FragTrap(std::string);
         FragTrap(const FragTrap& other);
         FragTrap& operator=(const FragTrap& other);
         void attack(const std::string& target);
-        void guardGate();
+        void highFivesGuys();
 
 };
 

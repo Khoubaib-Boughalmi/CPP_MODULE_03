@@ -9,7 +9,7 @@ ScavTrap::ScavTrap(): ClapTrap()
     this->AttackDamage = 20;
 }
 
-ScavTrap::ScavTrap(std::string passedName):ClapTrap(passedName)
+ScavTrap::ScavTrap(std::string passedName): ClapTrap(passedName)
 {
     std::cout << "ScavTrap Named Constructor Called" << std::endl;
     this->Name = passedName;
@@ -51,6 +51,7 @@ void ScavTrap::attack(const std::string& target) {
     else if(this->HitPoint == 0)
         std::cout << "ScavTrap " << this->Name << " cannot attacks " << target << " no Hit points are left!" << std::endl;
 }
+
 void ScavTrap::guardGate() {
         std::cout << "ScavTrap " << this->Name << " is now in Gate keeper mode"<< std::endl;
 }

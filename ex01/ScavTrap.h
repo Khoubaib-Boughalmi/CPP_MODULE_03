@@ -8,8 +8,8 @@ class ScavTrap: public ClapTrap
     private:
 
     public:
-        ScavTrap(/* args */);
-        virtual ~ScavTrap();
+        ScavTrap();
+        ~ScavTrap();
         ScavTrap(std::string);
         ScavTrap(const ScavTrap& other);
         ScavTrap& operator=(const ScavTrap& other);

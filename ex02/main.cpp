@@ -1,12 +1,12 @@
-#include "ScavTrap.h"
+#include "FragTrap.h"
 
 int main()
 {
-    ScavTrap scavTrap("ScavTrapNinja");
-    scavTrap.attack("Ninja Slayer");
-    scavTrap.takeDamage(5);
-    scavTrap.beRepaired(12);
-    scavTrap.takeDamage(77);
-    scavTrap.guardGate();
+    FragTrap fragTrap("FragTrapNinja");
+    fragTrap.attack("Ninja Slayer");
+    fragTrap.takeDamage(5);
+    fragTrap.beRepaired(12);
+    fragTrap.takeDamage(77);
+    fragTrap.highFivesGuys();
     return (0);
 }
