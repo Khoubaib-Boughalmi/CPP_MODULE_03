@@ -5,7 +5,8 @@ CFLAGS= -std=c++98 -Wall -Wextra -Werror
 SRCS =	main.cpp \
 		ClapTrap.cpp \
 		FragTrap.cpp \
-		ScravTrap.cpp	
+		ScavTrap.cpp \
+		DiamondTrap.cpp
 		
 %.o:%.cpp
 	${CC} ${CFLAGS} -c $^ -o $@

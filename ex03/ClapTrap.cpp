@@ -7,14 +7,14 @@ ClapTrap::ClapTrap(): Name("Unamed"), HitPoint(10), \
 }
 
 ClapTrap::ClapTrap(std::string passedName): Name(passedName), HitPoint(10), \
-                                            EnergyPoint(10), AttackDamage(10) 
+                                            EnergyPoint(10), AttackDamage(0) 
 {
-    std::cout << "ClapTrap Named Constructor Called" << std::endl;
+    std::cout << "ClapTrap Named " << this->Name << " Constructor Called" << std::endl;
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "ClapTrap Deconstructor Called" << std::endl;
+    std::cout << "ClapTrap " << this->Name << " Deconstructor Called" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other) {

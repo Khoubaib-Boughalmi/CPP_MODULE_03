@@ -1,32 +1,30 @@
 #include "DiamondTrap.h"
 
-DiamondTrap::DiamondTrap(): ClapTrap()
+DiamondTrap::DiamondTrap(): ClapTrap(), ScavTrap(), FragTrap()
 {
     std::cout << "DiamondTrap Default Constructor Called" << std::endl;
     this->Name = "unamed";
 	this->HitPoint = FragTrap::HitPoint;
     this->EnergyPoint = ScavTrap::EnergyPoint;
     this->AttackDamage = FragTrap::AttackDamage;
-    this->HitPoint = FragTrap::HitPoint;
 }
 
-DiamondTrap::DiamondTrap(std::string passedName): ClapTrap(passedName + "_clap_name")
+DiamondTrap::DiamondTrap(std::string passedName): ClapTrap(passedName + "_clap_name"), ScavTrap(passedName), FragTrap(passedName)
 {
-    std::cout << "DiamondTrap Named Constructor Called" << std::endl;
-    this->Name = passedName + "_clap_name";
+    ClapTrap::Name = ClapTrap::Name + "_clap_name";
+    this->Name = passedName;
     this->HitPoint = FragTrap::HitPoint;
     this->EnergyPoint = ScavTrap::EnergyPoint;
     this->AttackDamage = FragTrap::AttackDamage;
-    this->HitPoint = FragTrap::HitPoint;
-
+    std::cout << "DiamondTrap " << this->Name << " Named Constructor Called" << std::endl;
 }
 
 DiamondTrap::~DiamondTrap()
 {
-    std::cout << "DiamondTrap Deconstructor Called" << std::endl;
+    std::cout << "DiamondTrap " << this->Name << " Deconstructor Called" << std::endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap& other):ClapTrap(other), FragTrap(other), ScavTrap(other) {
+DiamondTrap::DiamondTrap(const DiamondTrap& other): ClapTrap(other.Name + "_clap_name"), ScavTrap(other), FragTrap(other) {
     std::cout << "DiamondTrap Copy Construct Called" << std::endl;
     *this = other;
 }

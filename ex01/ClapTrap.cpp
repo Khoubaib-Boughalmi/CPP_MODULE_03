@@ -7,7 +7,7 @@ ClapTrap::ClapTrap(): Name("Unamed"), HitPoint(10), \
 }
 
 ClapTrap::ClapTrap(std::string passedName): Name(passedName), HitPoint(10), \
-                                            EnergyPoint(10), AttackDamage(10) 
+                                            EnergyPoint(10), AttackDamage(0) 
 {
     std::cout << "ClapTrap Named Constructor Called" << std::endl;
 }

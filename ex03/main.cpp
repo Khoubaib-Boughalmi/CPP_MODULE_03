@@ -1,14 +1,15 @@
-#include "FragTrap.h"
+#include "DiamondTrap.h"
 
 int main()
 {
     
-    FragTrap fragTrap("FragTrapNinja");
-    fragTrap.attack("Ninja Slayer");
-    fragTrap.takeDamage(5);
-    fragTrap.beRepaired(12);
-    fragTrap.takeDamage(77);
-    fragTrap.highFivesGuys();
+    DiamondTrap diamondTrap("DiamondTrapNinja");
+    diamondTrap.attack("Ninja Slayer");
+    diamondTrap.takeDamage(5);
+    diamondTrap.beRepaired(12);
+    diamondTrap.takeDamage(77);
+    diamondTrap.highFivesGuys();
+    diamondTrap.whoAmI();
 
     return (0);
 }

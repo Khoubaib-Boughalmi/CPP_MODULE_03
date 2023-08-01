@@ -47,7 +47,7 @@ void ClapTrap::attack(const std::string& target) {
 }
 
 void ClapTrap::takeDamage(unsigned int amount) {
-    std::cout << "ClapTrap " << this->Name << " got damaged with " << amount << " pointd " << std::endl;
+    std::cout << "ClapTrap " << this->Name << " got damaged with " << amount << " point(s) " << std::endl;
     this->HitPoint -= amount;
     if(this->HitPoint <= 0)
     {
@@ -59,8 +59,7 @@ void ClapTrap::takeDamage(unsigned int amount) {
 void ClapTrap::beRepaired(unsigned int amount) {
     if (this->EnergyPoint > 0 && this->HitPoint > 0)
     {
-        std::cout << "ClapTrap " << this->Name << " got repaired with " << amount \
-        << " pointd " << std::endl;
+        std::cout << "ClapTrap " << this->Name << " got repaired with " << amount << " point(s) " << std::endl;
         this->HitPoint += amount;
         this->EnergyPoint--;
     }
